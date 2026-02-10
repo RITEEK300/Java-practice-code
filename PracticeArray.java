@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 
 public class PracticeArray {
     static void Num(int n){
