@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 abstract class Abs {
     String name;
     long rollNumber;
@@ -28,7 +30,9 @@ class Rohit extends Abs {
 public class AbstractClass {
     public static void main(String[] args) {
         Rohit r = new Rohit();
-        r.setValue("Rohit", 101, 20, 9885763210L);  // L for long
-        r.student();
+        Scanner sc = new Scanner(System.in);
+        r.number=sc.nextLong();
+        r.setValue("Rohit", 101, 20, r.number); 
+        r.student(); 
     }
 }
