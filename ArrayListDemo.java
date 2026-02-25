@@ -1,8 +1,15 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.LinkedHashSet;
+
 import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
+import java.util.TreeSet;
 import java.util.LinkedList;
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -40,8 +47,65 @@ public class ArrayListDemo {
 //   linkedlist.removeIf(x -> x == 0); 
 //   System.out.println(linkedlist);
 // Student<Integer> Student=new Studnet<>();
-Queue<Long> Qu=new LinkedList<Long>();
-Qu.offer(30L);
-
+// Queue<Long> Qu=new LinkedList<Long>();
+// Qu.offer(30L);
+// System.out.println(Qu);
+// Qu.poll();
+// System.out.println(Qu);
+// Qu.add(30L);
+// System.out.println(Qu.peek());
+// Deque<String> dq=new ArrayDeque<String>(); 
+// dq.offer("riteek");
+// dq.offer("pappu");
+// String n =dq.pollLast();
+// System.out.println(n);
+// Set<String> hash=new HashSet<>();
+// hash.add("riteek");
+// hash.add("pappu");
+// hash.add("neha");
+// hash.add("Diksha");
+// hash.add("nikku");
+// hash.add("nikku");
+// System.out.println(hash);
+// Set<String> hash1=new TreeSet<>();
+// hash1.add("riteek");
+// hash1.add("pappu");
+// hash1.add("neha");
+// hash1.add("Diksha");
+// hash1.add("nikku");
+// hash1.add("nikku");
+// System.out.println(hash1);
+// Set<String> hash2=new LinkedHashSet<>();
+// hash2.add("riteek");
+// hash2.add("pappu");
+// hash2.add("neha");
+// hash2.add("Diksha");
+// hash2.add("nikku");
+// hash2.add("nikku");
+// System.out.println(hash2);
+// System.out.println(hash.removeAll(hash));
+// System.out.println(hash);
+// System.out.println(hash2);
+// ArrayList<Integer> array=new ArrayList<>();
+// array.add(20);
+// array.add(20);
+// array.add(20);
+// array.add(20);
+// array.add(20);
+// array.remove(0);
+// ArrayList<Integer> array2=new ArrayList<>();
+// array2.add(50);
+// array2.addLast(49);
+// array.addAll(array2);
+// System.out.println(array2);
+// System.out.println(array);
+// System.out.println(array.contains(10));
+// HashSet<String> hash=new HashSet<>();
+// hash.add("raju");
+// System.out.println(hash);
+// for(String s:hash){
+// System.out.println(s);
+// }
+Set<Student> student = new LinkedHashSet<>();
     }
 }
