@@ -106,6 +106,6 @@ public class ArrayListDemo {
 // for(String s:hash){
 // System.out.println(s);
 // }
-Set<Student> student = new LinkedHashSet<>();
+// Set<Student> student = new LinkedHashSet<>();
     }
 }
