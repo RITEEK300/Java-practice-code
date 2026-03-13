@@ -20,6 +20,9 @@ for(int i=6;i>=1;i--){
     System.out.print(" ");
   }
   System.out.println("#");
+  System.out.println("#");
+  System.out.println("#");
+
 }
 
   }  
