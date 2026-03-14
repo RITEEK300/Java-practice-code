@@ -1,10 +1,10 @@
-interface A{
+interface A2{
     void show();
 }
-interface B{
+interface B2{
     void display();
 }
-class multiple implements A,B{
+class multiple implements A2,B2{
     public void show(){
         System.out.println("i am class A");
     }

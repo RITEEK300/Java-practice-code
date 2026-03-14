@@ -1,4 +1,4 @@
-class output {
+class output2 {
 
     public void reverse(String s) {
 
@@ -15,7 +15,7 @@ public class ClassName {
 
         String s = "Riteek";
 
-        output obj = new output();
+        output2 obj = new output2();
         obj.reverse(s);
 
     }
