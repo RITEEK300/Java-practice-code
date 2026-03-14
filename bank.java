@@ -8,7 +8,6 @@ class bank {
         System.out.println("Enter your password:");
         Scanner scanner = new Scanner(System.in);
         int inputPassword = scanner.nextInt();
-
         if (inputPassword == password) {
             System.out.println("Enter your deposit amount:");
             double amount = scanner.nextDouble();

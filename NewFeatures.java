@@ -1,5 +1,7 @@
 import java.util.*;
 
+import static java.lang.IO.println;
+
 class Student{
     String name;
     long id;
@@ -10,18 +12,22 @@ class Student{
         this.name=name;
         this.marks=marks;
     }
+
+    @Override
+    public String toString() {
+        return "Name: "+name+"\nId: "+id+"\nMarks: "+marks;
+    }
 }
 
 public class NewFeatures {
     public static void main(String[] args) {
 
         List<Student> list = Arrays.asList(
-                new Student("riteek",1,50),
-                new Student("pappu",2,70),
-                new Student("rahul",3,90)
+                new Student("riteek", 1, 50),
+                new Student("pappu", 2, 70),
+                new Student("rahul", 3, 70)
         );
-        list.stream()
-                .map(s -> s.id+" "+s.marks+" "+s.name)
-                .forEach(System.out::println);
+        long count =list.stream().filter(s -> s.marks > 50).count();
+    System.out.println(count);
     }
 }
