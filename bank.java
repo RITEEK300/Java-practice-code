@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class bank {
     private double balance = 50000.456;
-    private int password = 123;
+    private int password = 1234;
 
     public void deposit() {
         System.out.println("Enter your password:");
