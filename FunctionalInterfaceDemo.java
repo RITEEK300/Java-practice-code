@@ -4,13 +4,8 @@ interface Operation{
 }
 
 public class FunctionalInterfaceDemo {
-    static void main() {
-        Operation obj=new Operation() {
-            @Override
-            public int sum(int a,int b) {
-                return a+b;
-            }
-        };
+   public static void main(String[] args) {
+        Operation obj= Integer::sum;
         System.out.println(obj.sum(1,2));
     }
 }
