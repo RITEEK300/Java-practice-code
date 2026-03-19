@@ -1,6 +1,6 @@
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 class Books{
@@ -32,6 +32,11 @@ public class LibraryManagement {
         );
 //        books.stream().filter(book->book.nameOfBook.startsWith("H")).forEach(System.out::println);
 //        books.stream().map(book->book.nameOfBook.toUpperCase()).forEach(System.out::println);
-        books.stream().sorted(book->book.sort)
+//        books.stream().sorted(Comparator.comparingInt(b -> b.publishYear))
+//                .forEach(System.out::println);
+//        books.stream().sorted(Comparator.comparingInt(book->book.price)).forEach(System.out::println);
+//        books.stream().map(book->book.nameOfBook+" book is coming soon").forEach(System.out::println);
+        books.stream().filter(book->book.nameOfBook.length()>=7).forEach(System.out::println);
+
     }
 }
